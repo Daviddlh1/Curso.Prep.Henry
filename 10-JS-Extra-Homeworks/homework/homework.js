@@ -10,6 +10,10 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  let obj = {};
+  for(let i = 0; i < objeto.length; i++){
+    console.log(objeto.charAt(i));
+  }
 }
 
 
@@ -18,14 +22,24 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  /* let r = {};
+  for(let i = 0; i < string.length; i++){
+    if(r.string.charAt(i) === undefined){
+      r.string.charAt(i) = 1;
+    }else{
+      r.string.charAt(i) +=1;
+    }
+  }
+  return r; */
 }
-
 
 function capToFront(s) {
   //Realiza una función que reciba como parámetro un string y mueva todas las letras mayúsculas
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
+  
   //Escribe tu código aquí
+  
 }
 
 
@@ -57,6 +71,18 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  let arrOrdenado = [];
+  for(e in arr){
+    for(let i; i <arr.length; i++){
+      if(e.length>arr[i].length){
+        arrOrdenado.shift(arr[i])
+      }else{
+        arrOrdenado.push(arr[i])
+      }
+    }
+  }
+
+  return arrOrdenado
 }
 
 
